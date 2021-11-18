@@ -19,13 +19,14 @@ sbit LCD_D7_Direction at TRISB5_bit;
 
 
 void main() {
-    TRISB.F6=1;
+  TRISB.F6=1;
   UART1_Init(9600);               // Initialize UART module at 9600 bps
   Delay_ms(100);                  // Wait for UART module to stabilize
 
   UART1_Write_Text("Start");
   UART1_Write(10);
   UART1_Write(13);
+  //This os
 
   limit = 0;
   cnt = 0;
